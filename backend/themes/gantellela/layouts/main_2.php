@@ -133,7 +133,7 @@ AppAsset::register($this);
                                         <span class=" fa fa-angle-down"></span>
                                     </a>
                                     <ul class="dropdown-menu dropdown-usermenu animated fadeInDown pull-right">
-                                       <li><a data-method="post" href="<?php echo Yii::$app->urlManager->createUrl("/site/logout"); ?> "><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
+                                       <li><a href="<?php echo Yii::$app->urlManager->createUrl("/site/logout"); ?> "><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
                                     </ul>
                                 </li>
 
