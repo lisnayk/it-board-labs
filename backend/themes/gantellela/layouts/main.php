@@ -17,6 +17,8 @@ AppAsset::register($this);
     <head>
         <meta charset="<?= Yii::$app->charset ?>">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="Keywords" content="<?= Html::encode(Yii::$app->controller->keywords) ?>">
+        <meta name="Description" content="<?= Html::encode(Yii::$app->controller->description) ?>">
         <?= Html::csrfMetaTags() ?>
         <title><?= Html::encode($this->title) ?></title>
         <?php $this->head() ?>
@@ -67,9 +69,9 @@ AppAsset::register($this);
                                     </li>
                                     <li><a><i class="fa fa-edit"></i> Страницы <span class="fa fa-chevron-down"></span></a>
                                         <ul class="nav child_menu" style="display: none">
-                                            <li><a href="form.html">Список</a>
+                                            <li><a href="<?php echo Yii::$app->urlManager->createUrl("page/index"); ?>">Список</a>
                                             </li>
-                                            <li><a href="form_advanced.html">Добавить</a>
+                                            <li><a href="<?php echo Yii::$app->urlManager->createUrl("page/create"); ?>">Добавить</a>
                                             </li>
                                             
                                         </ul>
